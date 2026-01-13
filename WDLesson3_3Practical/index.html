@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- WD Lesson 3.3: 
+     How do we interact with an element on a web page?  -->
+
+<!-- Resources 
+    https://www.w3schools.com/js/js_htmldom_methods.asp 
+    https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+
+     YouTube Video Lesson
+     https://youtu.be/t2R9hOkM_ZU 
+-->
+<html>
+  <head>
+    <title>WD Lesson 3.3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <!-- Challenge 4: Add a heading to the <div> below titling the images you have added -->
+    <div class="container banner">
+      <h1>This is my Webpage</h1>
+      
+    </div>
+    
+    <!-- Challenge 1: Add five images each within it's own div like <div><img src="" ></div> to div with a class of gallery below  -->
+    <div class="container gallery">
+      <div>
+        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?cs=srgb&dl=cascade-clouds-cool-wallpaper-210186.jpg&fm=jpg" alt="First Image" onmouseover="ShowFirstImage()"
+      </div>
+      <div>
+        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" alt="Second Image" onmouseover="ShowSecondImage()">
+        </div>
+        <div>
+          <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70" alt="Third Image" onmouseover="ShowThirdImage()">
+        </div>
+        <div>
+          <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Desktop-hd-3d-nature-images-download.jpg" alt="Fourth image" onmouseover="ShowFourthImage()">
+        </div>
+        <div> 
+          <img src="https://tse1.mm.bing.net/th/id/OIP.y5sI5nn9gOg0PZHFgw4iLAHaFj?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fifth Image" onmouseover="ShowFifthImage()">
+        </div>
+      
+      
+    </div>
+    <!-- Challenge 3: For each image in the class gallery above, add onmouseover event that calls the 
+         corresponding function you create in script.js as part of Challenge 2.
+    -->
+    <div class="container alternate landmark">
+      <div id="highlight"></div>
+      <img src="" id="photo">
+    </div>
+   
+    <div id="footer" class="container">
+      NYC &copy; 2021
+    </div>
+
+  </body>
+</html>
