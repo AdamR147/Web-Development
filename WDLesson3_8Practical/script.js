@@ -3,7 +3,7 @@
 
 
 /* Challenge 4: Does the function name match the event handler referenced in the event listener? */
-function volume(){
+function cylinder(){
 
   /* Challenge 5: Are there any errors in retrieving and parsing the information from the text inputs? */
   let r = parseInt(document.getElementBy("r").value);
