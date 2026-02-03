@@ -11,9 +11,11 @@
       function guess(){
         let g = parseFloat(document.getElementById("guess").value);
         let output = document.getElementById("output");
-        let message = ""
+        let message = "";
 
         // Challenge 5: If the guess is lower than secret, set message to "Guess higher" 
+        if(g < secret){
+          message = "Guess Higher";}
 
         // Challenge 6: If the guess is higher than secret, set message to "Guess lower" 
 

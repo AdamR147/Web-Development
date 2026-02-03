@@ -11,12 +11,19 @@
         let price2 = parseFloat(document.getElementById("price2").value);
         let price3 = parseFloat(document.getElementById("price3").value);
         let output = document.getElementById("output");
-        let message = ""
+        let message = "";
         // Challenge 1: Create a variable total that is the sum of all three prices.
 
-        // Challenge 2: If the total is more than 100, set message to "Discount earned" otherwise set message to "Not enough for discount"
+        let total = price1 + price2 + price3;
 
+        // Challenge 2: If the total is more than 100, set message to "Discount earned" otherwise set message to "Not enough for discount"
+        if (total > 100){
+        message = "Discount Earned";}
+        else{  
+        message = "Not Enough for Discount";
+        }
         // Challenge 3: Display a message including the total and discount message
+        output.innerHTML = "Total: $" + total.toFixed(2) + "<br>" + message;
       }
     </script>
   </head>
