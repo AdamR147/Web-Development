@@ -13,6 +13,13 @@ function name(){
 */
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
+function name(){
+  let input1 = document.getElementById("input1").value;
+  let input2 = document.getElementById("input2").value;
+  let output = document.getElementById("output");
+  let result = Number(input1) + Number(input2);
+}
+
 
 
 
