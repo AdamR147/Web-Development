@@ -29,10 +29,14 @@ function BMI(){
        }else if(bmi >= 18.5 && bmi <= 24.9){
               msg = "Healthy Weight";
               filename = "healthyweight.png"
-       }else if(bmi >= 25 && bmi <= 29.9)
+       }else if(bmi >= 25 && bmi <= 29.9){
               msg = "Overweight";
               filename = "overweight.png";
-              
+       }else if(bmi > 30.0){
+              msg = "Obese Weight"
+              filename = "obeseweight.png";
+       } 
+
 
 
 }
