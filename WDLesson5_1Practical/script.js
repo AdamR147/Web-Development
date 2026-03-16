@@ -14,19 +14,20 @@ Year N: $xxxxxx
 */
 
     function interest(){
-        let p = parseFloat(document.getElementById("P").value);
-        let r = parseFloat(document.getElementById("r").value) / 100;
-        let n = parseFloat(document.getElementById("n").value);
-        let t = parseFloat(document.getElementById("t").value);
+    let p = parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value) / 100;
+    let n = parseFloat(document.getElementById("n").value);
+    let t = parseFloat(document.getElementById("t").value);
 
-        let output = document.getElementById("output");
+    let output = document.getElementById("output");
 
-        let build ="";
-        for(let i = 1; i < t; i+=1){
-            let a = p * Math.pow(1 + r / n, n * i);
-            //let a = p * (1 + r / n) ** (n * t);
+    let build = "";
 
-            build += `Year ${i}: $${a.toFixed(2)}<br>`;
-        }
-        output.innerHTML = build;
+    for(let tYear = 1; tYear <= t; tYear++){
+        let a = p * Math.pow(1 + r / n, n * tYear);
+
+        build += `Year ${tYear}: $${a.toFixed(2)}<br>`;
     }
+
+    output.innerHTML = build;
+}
