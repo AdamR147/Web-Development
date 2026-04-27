@@ -15,29 +15,40 @@ Use past examples, classwork and practicals to assist you in completing this pra
 */
 
 function BMI(){
-       let w = parseInt(document.getElementById("weight")).value;
-       let h = parseInt(document.getElementById("height")).value;
-       let output = (document.getElementById("output"))
-       let msg = "";
 
-       let filename = "";
+    
+    let w = parseInt(document.getElementById("weight").value);
+    let h = parseInt(document.getElementById("height").value);
+    let output = document.getElementById("output");
 
-       let bmi = 703 * (w / h ** 2);
-       if(bmi < 18.5 ){
-              msg = "Underweight";
-              filename = "underweight.png";
-       }else if(bmi >= 18.5 && bmi <= 24.9){
-              msg = "Healthy Weight";
-              filename = "healthyweight.png"
-       }else if(bmi >= 25 && bmi <= 29.9){
-              msg = "Overweight";
-              filename = "overweight.png";
-       }else if(bmi > 30.0){
-              msg = "Obese Weight"
-              filename = "obeseweight.png";
-       } 
+    let msg = "";
+    let filename = "";
+
+    
+    let bmi = 703 * (w / (h ** 2));
+
+    
+    if(bmi < 18.5){
+        msg = "Underweight";
+        filename = "underweight.png";
+
+    }else if(bmi >= 18.5 && bmi <= 24.9){
+        msg = "Healthy Weight";
+        filename = "healthyweight.png";
+
+    }else if(bmi >= 25 && bmi <= 29.9){
+        msg = "Overweight";
+        filename = "overweight.png";
+
+    }else{
+        msg = "Obese Weight";
+        filename = "obeseweight.png";
+    }
+
+    
+    output.innerHTML = "Your BMI is " + bmi.toFixed(2) + " - " + msg;
 
 
-
+    document.getElementById("bmiImage").src = "images/" + filename;
 }
 

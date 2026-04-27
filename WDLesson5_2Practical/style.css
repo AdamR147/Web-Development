@@ -1,47 +1,89 @@
-html, body{ 
-  height:100%;
-  margin:0 auto;
+
+html, body { 
+  height: 100%;
+  margin: 0;
   background-image: url("pizzaBK.jpg");
   background-size: cover;
+  font-family: Arial, sans-serif;
 }
-.container{
-  display:flex;
+
+.container {
+  display: flex;
 }
-.center{
+
+.center {
   justify-content: center;
   align-items: center;
 }
-#banner{
-  background-color:white;
+
+#banner {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
-#output{
-  padding:20px;
-  /* Challenge 3: Set flex-wrap to wrap */
+
+#output {
+  display: flex;           
+  flex-direction: column;  
+  align-items: center;     
+  flex-wrap: wrap;         
+  padding: 20px;
+  gap: 20px;               
 }
-input[type="button"]{
-  width:100%;
+
+/* Pizza card */
+.card, .pizza-card {       
+  position: relative;      
+  width: 300px;            
+  margin: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  flex: 0 0 150px;         
+  text-align: center;
+}
+
+
+.pizza {
+  width: 100%;             
+  height: 200px;           
+  object-fit: cover;       
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.title {
+  width: 80%;              
+  height: 50px;           
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+input[type="button"] {
+  width: 100%;
   margin-top: 10px;
-} 
-input[type="text"]{
-  width:124px;
-} 
-.card{
-  margin:20px;
-  background-color:white;
-  padding:10px;
-  border:1px solid gray;
-  border-radius:10px;
-  box-shadow:2px 2px 2px black;
-  /* Challenge 4: Set the flex to 0 0 150px */
-
+  padding: 5px;
+  cursor: pointer;
 }
 
-/* Challenge 5: Create CSS class rule named pizza to used with the pizza images
-            1) Provide an appropriate width and height for the image
-            2) Set object-fit to cover;
-*/
+input[type="text"] {
+  width: 124px;
+  padding: 5px;
+}
 
-/* Challenge 6: Create CSS class rule named title to used with the title images.  
-                Set height to an appropriate size
 
-*/
+.price {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.8);
+  padding: 2px 6px;
+  border-radius: 5px;
+}

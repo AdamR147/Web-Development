@@ -52,7 +52,19 @@
         <a href="hhttps://www.cdc.gov/growth-chart-training/hcp/using-bmi/calculating-bmi.html"> CDC Reference </a>
         <hr>
         <!-- Challenge 1: Create the UI.  You will need to look up the formula for BMI in order to determine the number of text inputs required. -->
-      </div>
+      <div class="bmi-calculator">
+  <h2>BMI Calculator</h2>
+
+  <input type="number" id="height" placeholder="Enter height (cm)">
+  <br><br>
+
+  <input type="number" id="weight" placeholder="Enter weight (kg)">
+  <br><br>
+
+  <button onclick="BMI()"></button>
+
+  <p id="result">Your BMI will appear here.</p>
+</div>
      
     </div>
     <div id="footer" class="container center">

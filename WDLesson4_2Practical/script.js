@@ -27,6 +27,23 @@ function name(){
 1) Review the HTML for the UI.  Remember dropdown boxes are just input.
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
-function pet(){
+function pet() {
+  let petChoice = document.getElementById("petSelect").value; // get selected pet
+  let output = document.getElementById("output"); // get the div where we show the image
 
+  let imgSrc = ""; // variable to store the image name
+
+  if (petChoice === "dog") {
+    imgSrc = "funnyDog.jpg";
+  } else if (petChoice === "cat") {
+    imgSrc = "funnyCat.jpg";
+  } else if (petChoice === "bear") {
+    imgSrc = "funnyBear.jpg";
+  }
+
+  if (imgSrc !== "") {
+    output.innerHTML = `<img src="${imgSrc}" alt="${petChoice}" width="200">`;
+  } else {
+    output.innerHTML = ""; // if nothing is selected, show nothing
+  }
 }
