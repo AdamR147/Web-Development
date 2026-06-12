@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WD Lesson 7.6 Demonstration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="d3-5.8.2.min-c5268e33.js"></script>
+<script src="c3.min-d2a1f852.js"></script>
+<script src="helper.js"></script>
+<script src="script.js"></script>
+</head>
+
+<body onload="init()">
+
+<header id="banner" class="container center">
+<div>
+<h1>NYC Open Data</h1>
+<h1>Tracking COVID-19 Across NYC</h1>
+</div>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+  <a href="analysis.html">Graph</a>
+  <a href="filter.html">Filtering</a>
+</nav>
+<div class="container subbanner"></div>
+
+<section class="info">
+<p>
+COVID-19 is a highly contagious disease caused by the SARS-CoV-2
+virus, which primarily spreads through the air via infectious
+droplets and aerosol particles.
+</p>
+
+<p>
+COVID-19 most often causes respiratory symptoms that can feel much
+like a cold, the flu, or pneumonia. COVID-19 may affect more than
+your lungs and respiratory system. Other parts of your body may also
+be affected by the disease. Most people with COVID-19 have mild
+symptoms, but some people become severely ill.
+</p>
+
+<p>
+COVID-19 changed the world in many ways, affecting health systems,
+education, businesses, and daily life across the globe. During the
+pandemic, technology and programming played an important role in
+helping people stay connected and informed. Developers created
+websites, mobile apps, and data dashboards to track cases, share
+medical updates, and support online learning and remote work.
+Artificial intelligence and data analysis were also used to study
+the spread of the virus and assist researchers in developing
+treatments and vaccines.
+</p>
+</section>
+
+<section class="hero">
+<div class="hero-text">
+<h2>COVID-19 Across NYC</h2>
+
+<p>
+Explore data trends and information about the COVID-19 pandemic
+and its impact on New York City.
+</p>
+
+<a href="https://en.wikipedia.org/wiki/COVID-19"
+target="_blank"
+class="btn">
+Learn About COVID-19
+</a>
+
+<a href="https://www.cdc.gov/covid/vaccines/index.html" class="btn">
+COVID-19 Vaccines
+</a>
+</div>
+
+
+<img
+src="https://cdn.who.int/media/images/default-source/mca/mca-covid-19/coronavirus-2.tmb-1920v.jpg"
+alt="COVID-19 Virus">
+</section>
+
+<section class="card">
+<h3>What is COVID-19?</h3>
+
+<p>
+COVID-19 is a contagious disease caused by the SARS-CoV-2 virus.
+</p>
+</section>
+
+<div id="output" class="container"></div>
+
+<footer id="footer" class="container center">
+<p>2026 NYC Open Data Project</p>
+</footer>
+
+</body>
+</html>

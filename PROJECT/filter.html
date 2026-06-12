@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PROJECT PRESENTATION</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+   </head>
+   <body onload="init()">
+
+    <div id="banner" class="container center">
+      <div style="text-align:center">
+          <h1>NYC Open Data</h1>
+          <h1>Tracking COVID-19 Across NYC</h1>
+      </div>
+    </div>
+     <nav>
+    <a href="index.html">Home</a>
+  <a href="analysis.html">Graph</a>
+  <a href="filter.html">Filtering</a>
+</nav>
+       <div class="container subbanner">
+      <div>
+<p>This example demonstrates how to filter a dataset using COVID-19-related records in the city, sourced from public health and open data repositories. The filtering process focuses on entries associated with COVID-19 cases, testing, vaccinations, or other pandemic-related indicators within the city.</p>
+        <a class="button" href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data</a> 
+        <a class="button" target="_blank" href="https://data.cityofnewyork.us/Health/COVID-19-Daily-Counts-of-Cases-Hospitalizations-an/rc75-m7u3/about_data"
+">Covid-19 Cases</a>
+ <a class="button" target="_blank" href="https://jsoneditoronline.org/"> JSON Editor Online</a>
+
+       </div>
+    </div>
+   <div style="padding:20px">
+    <h3 style="display:inline;">Search By Borough</h3>
+
+    <select id="borough">
+        <option value="">Select a Borough</option>
+        <option value="Manhattan">Manhattan</option>
+        <option value="Brooklyn">Brooklyn</option>
+        <option value="Queens">Queens</option>
+        <option value="Bronx">Bronx</option>
+        <option value="Staten Island">Staten Island</option>
+    </select>
+
+    <a class="button" onclick="filterByBorough()">Search</a>
+    <hr>
+</div>
+
+    <div id="result" class="container">
+      
+    </div>
+    <div id="output" class="container">
+    </div>
