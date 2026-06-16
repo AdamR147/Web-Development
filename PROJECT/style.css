@@ -7,22 +7,26 @@ body {
     background: #f4f7fa;
 }
 
+
 /* Layout Helpers */
 .container {
     display: flex;
     padding: 10px;
 }
 
+
 .center {
     justify-content: center;
     align-items: center;
 }
+
 
 /* Navigation */
 nav {
     background-color: black;
     display: flex;
 }
+
 
 nav a {
     color: white;
@@ -32,9 +36,11 @@ nav a {
     text-align: center;
 }
 
+
 nav a:hover {
     background-color: #333;
 }
+
 
 /* Banner */
 #banner {
@@ -43,9 +49,11 @@ nav a:hover {
     text-align: center;
 }
 
+
 .subbanner {
     background-color: white;
 }
+
 
 /* Information Section */
 .info {
@@ -53,6 +61,7 @@ nav a:hover {
     line-height: 1.7;
     font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
 }
+
 
 /* Hero Section */
 .hero {
@@ -64,10 +73,12 @@ nav a:hover {
     background: white;
 }
 
+
 .hero img {
     width: 100%;
     border-radius: 15px;
 }
+
 
 .hero h2 {
     font-size: 40px;
@@ -75,9 +86,11 @@ nav a:hover {
     margin-top: 0;
 }
 
+
 .hero p {
     line-height: 1.6;
 }
+
 
 /* Buttons */
 .btn {
@@ -92,9 +105,11 @@ nav a:hover {
     transition: background-color 0.3s;
 }
 
+
 .btn:hover {
     background-color: #005fd1;
 }
+
 
 .button {
     text-decoration: none;
@@ -105,9 +120,11 @@ nav a:hover {
     box-shadow: 2px 2px 2px black;
 }
 
+
 .button:hover {
     background-color: black;
 }
+
 
 /* Cards */
 .card {
@@ -121,14 +138,17 @@ nav a:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .card:hover {
     transition: all 0.4s;
     transform: scale(1.03);
 }
 
+
 .card img {
     height: 100px;
 }
+
 
 /* Utility Classes */
 .highlight {
@@ -136,22 +156,27 @@ nav a:hover {
     font-style: italic;
 }
 
+
 .heading {
     font-weight: bold;
 }
 
+
 .flash {
     max-width: 200px;
 }
+
 
 /* Output Section */
 #output {
     flex-wrap: wrap;
 }
 
+
 #panel {
     flex: 1;
 }
+
 
 /* Footer */
 #footer {
@@ -165,6 +190,7 @@ nav a:hover {
     bottom: 0;
 }
 
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .hero {
@@ -172,10 +198,12 @@ nav a:hover {
         text-align: center;
     }
 
+
     .hero img {
         max-width: 500px;
         margin: 0 auto;
     }
+
 
     .btn {
         display: block;
